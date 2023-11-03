@@ -6,7 +6,7 @@ Console.WriteLine(CaseParser.Parse(toBeParsed));
 
 public static class CaseParser
 {
-    //Can only parse case seperated by "." and contain "given", "when", "then" only once each in single case.
+    //Can only parse case seperated by "•" and contain "given", "when", "then" only once each in single case.
     public static string Parse(string toBeParsed)
     {
         toBeParsed = CleanString(toBeParsed);
