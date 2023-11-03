@@ -32,6 +32,6 @@ public static class CaseParser
         string whenClause = str.Substring(whenClauseStart, str.IndexOf("then") - whenClauseStart).Trim().Replace(" ", "_");
         string thenClause = str.Substring(thenClauseStart).Trim().Replace(" ", "_");
 
-        return $"[Fact]\npublic void Should_{thenClause}_when_{whenClause}_given_{givenClause}\n{{\n}}\n";
+        return $"[Fact]\npublic void Should_{thenClause}_when_{whenClause}_given_{givenClause}()\n{{\n}}\n";
     }
 }
